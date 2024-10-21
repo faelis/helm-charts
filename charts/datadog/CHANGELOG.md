@@ -1,5 +1,9 @@
 # Datadog changelog
 
+## 3.74.7
+
+* Add  configuration values `datadog.processAgent.disableOsReleaseFileMount` and `datadog.processAgent.disablePasswdMount` to disable `/etc/passwd` and `datadog.osReleasePath` in processAgent container when underlying OS doesn't have these files (like talos.dev)
+
 ## 3.74.6
 
 * Fix error message for when System Probe is enabled on GKE Autopilot
